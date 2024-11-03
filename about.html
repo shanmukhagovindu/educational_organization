@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Website Design - Easy Tutorial</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2? family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+  <section class="sub-header">
+    <nav>
+      <a href="index.html"><img src="images/logo.png" alt=""></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i> <!-- cross icon -->
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="course.html">Course</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i> <!-- menu icon -->
+    </nav>
+    <h1>About us</h1>
+  </section>
+
+  <!-- about us content -->
+   <section class="about-us">
+    <div class="row">
+      <div class="about-col">
+        <h1>We are the world's largest university</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sed reprehenderit architecto a delectus molestiae ipsam quis eligendi, veniam dolorum quasi beatae aspernatur id officiis. Architecto eligendi et eum officia.</p>
+        <a href="" class="hero-btn red-btn">Explore now</a> <!--here on using class="hero-btn" explore now button is removing-->
+      </div>
+      <div class="about-col">
+        <img src="images/about.jpg" alt="">
+      </div>
+    </div>
+   </section>
+    
+    <!-- footer -->
+    <footer class="footer">
+      <h4>About us</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, ullam. Deserunt earum vitae similique <br/>culpa laudantium ad quae voluptas minima, totam porro ab maxime officiis impedit error reiciendis eum. Eligendi?</p>
+      <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-square-x-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-whatsapp"></i>
+      </div>
+      <p>Made by <i class="fa-regular fa-heart"></i> shanmukha </p>
+    </footer>
+
+  <!-- JavaScript for toogle menu of small screens -->
+  <script>
+    var narLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+      navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+      navLinks.style.right="-200px";
+    }
+  </script>
+</body>
+</html>
